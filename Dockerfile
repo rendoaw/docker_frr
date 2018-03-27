@@ -26,6 +26,7 @@ RUN apt-get update && apt-get -y install git \
     libsystemd-dev \
     python-ipaddr
 
+RUN pip install sphinx
 
 RUN groupadd -g 92 frr \
     && groupadd -r -g 85 frrvty \
